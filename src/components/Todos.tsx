@@ -1,10 +1,15 @@
 import React from 'react'
 
-const Todos = () => {
+import Todo from '../models/todo'
+import TodoItem from '../components/TodoItem'
+
+// REACT.FC indicates that its a type of functional component (generic type)
+const Todos: React.FC<{ items: Todo[] }> = (props) => { 
   return (
     <ul>
-        <li>Learn React</li>
-        <li>Learn typescript</li>
+      {props.items.map((item) => (
+        <TodoItem key={item.id} text={item.text} />
+      ))}
     </ul>
   )
 }
