@@ -40,3 +40,18 @@
     background-color: #ebc002;
     border-color: #ebc002;
 }
+
+@media (max-width: 768px) {
+    .form{
+        width: 90%;
+    }
+
+    .form label{
+        font-size: 1.1rem;
+        margin-bottom: 10px;
+    }
+
+    .form button{
+        margin-top: 10px;
+    }
+}
