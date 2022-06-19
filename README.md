@@ -1,2 +1,4 @@
 # TODO APP
-Gerenciador de tarefas com React e typescript
+Gerenciador de tarefas com:
+* React
+* Typescript
